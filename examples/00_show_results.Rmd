@@ -1,0 +1,26 @@
+---
+title: "Title"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Correlation matrix
+
+# {.tabset .tabset-fade .tabset-pills}
+
+## Code
+
+```{r chunk-1, eval=FALSE}
+library(tidyverse)
+mtcars %>% 
+  cor %>% 
+  round(2)
+```
+
+## Output
+```{r chunk-2, echo=FALSE, ref.label='chunk-1'}
+```
+
